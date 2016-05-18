@@ -1,0 +1,9 @@
+{
+    "name": "kurozumi/form",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Kurozumi\\Form\\": "src"
+        }
+    }
+}
