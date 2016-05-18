@@ -1,10 +1,10 @@
 <?php
 require_once 'vendor/autoload.php';
 
-use Kurozumi\Form\Validation;
-use Kurozumi\Form\Message;
+use Kurozumi\Validation;
+use Kurozumi\Message;
 
-$form = Kurozumi\Form\Form::confirm();
+$form = Kurozumi\Form::confirm();
 
 $form->error_massage = new Message();
 
@@ -12,7 +12,7 @@ if(Validation::required("email") === false)
 	$form->error_massage["email"] = "メールアドレスは必須です。";
 
 if(count($form->error_massage) > 0){
-	$form::set_errors(iterator_to_array($form->error_massage));
+	$form::setErrors(iterator_to_array($form->error_massage));
 	$form::redirect();
 }
 

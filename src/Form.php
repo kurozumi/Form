@@ -1,6 +1,6 @@
 <?php
 
-namespace Kurozumi\Form;
+namespace Kurozumi;
 
 class Form
 {
@@ -45,7 +45,7 @@ class Form
 		return self::getInstance();
 	}
 	
-	public static function set_errors($errors)
+	public static function setErrors($errors)
 	{
 		$_SESSION['errors'] = $errors;
 	}

@@ -1,5 +1,5 @@
 <?php
-namespace Kurozumi\Form;
+namespace Kurozumi;
 
 class Validation
 {
@@ -35,12 +35,12 @@ class Validation
 		return (bool) preg_match("/^\d{3}-\d{4}$|^\d{3}-\d{2}$|^\d{3}$/", $postalcode);
 	}
 
-	public static function set_errors($errors = array())
+	public static function setErrors($errors = array())
 	{
 		$_SESSION['errors'] = $errors;
 	}
 
-	public static function form_error($key)
+	public static function formError($key)
 	{
 		return isset($_SESSION['errors'][$key]) ? $_SESSION['errors'][$key] : "";
 	}

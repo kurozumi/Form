@@ -1,7 +1,7 @@
 <?php
 require_once 'vendor/autoload.php';
 use Kurozumi\Form\Input;
-$form = Kurozumi\Form\Form::form();
+$form = Kurozumi\Form::form();
 
 print_r($_SESSION);
 ?>

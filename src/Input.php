@@ -1,5 +1,5 @@
 <?php
-namespace Kurozumi\Form;
+namespace Kurozumi;
 
 class Input
 {
