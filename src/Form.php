@@ -24,6 +24,11 @@ class Form
 	{
 		$this->{$name} = $class;
 	}
+	
+	public static function form()
+	{
+		return self::getInstance();
+	}
 
 	public static function confirm()
 	{

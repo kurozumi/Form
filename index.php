@@ -1,6 +1,9 @@
 <?php
 require_once 'vendor/autoload.php';
-$form = Kurozumi\Form\Form::getInstance();
+use Kurozumi\Form\Input;
+$form = Kurozumi\Form\Form::form();
+
+print_r($_SESSION);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +31,7 @@ $form = Kurozumi\Form\Form::getInstance();
 			<form method="post" action="confirm.php">
 				<div class="form-group">
 					<label for="exampleInputEmail1">Email address</label>
-					<input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+					<input type="email" name="email" value="<?php echo Input::value("email");?>" class="form-control" id="exampleInputEmail1" placeholder="Email">
 				</div>
 				<div class="form-group">
 					<label for="exampleInputPassword1">Password</label>
