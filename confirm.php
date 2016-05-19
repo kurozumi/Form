@@ -6,7 +6,7 @@ use Kurozumi\Message;
 
 $form = Kurozumi\Form::confirm();
 
-$form->error_massage = new Message();
+$form->error_massage = new Container();
 
 if(Validation::required("email") === false)
 	$form->error_massage["email"] = "メールアドレスは必須です。";

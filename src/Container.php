@@ -1,7 +1,7 @@
 <?php
-namespace Kurozumi\Form;
+namespace Kurozumi;
 
-class Message implements \ArrayAccess, \Countable, \IteratorAggregate
+class Container implements \ArrayAccess, \Countable, \IteratorAggregate
 {
 
 	private $container = array();
