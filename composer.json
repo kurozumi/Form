@@ -3,7 +3,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Kurozumi\\": "src"
+            "Form\\": "src/Form"
         }
     }
 }
